@@ -76,7 +76,9 @@ async function onAddDate() {
         </div>
       </template>
       <div class="space-y-4">
-        <div class="flex items-center justify-between mb-8">
+        <div
+          class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-0 justify-between mb-8"
+        >
           <div>
             <p class="text-xs mb-1">Choix du jour</p>
             <UPopover class="w-4/12" :popper="{ placement: 'bottom-start' }">
