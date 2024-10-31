@@ -5,4 +5,10 @@
   </NuxtLayout>
 </template>
 
-<style></style>
+<style>
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+</style>

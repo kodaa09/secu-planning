@@ -33,15 +33,24 @@ definePageMeta({
 </script>
 
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
-    <UFormGroup label="Email" name="email">
-      <UInput v-model="state.email" />
-    </UFormGroup>
+  <div class="container mx-auto flex flex-col justify-center h-full">
+    <UCard class="w-[320px] sm:w-[620px] mx-auto">
+      <UForm
+        :schema="schema"
+        :state="state"
+        class="space-y-4"
+        @submit="onSubmit"
+      >
+        <UFormGroup label="Email" name="email">
+          <UInput v-model="state.email" />
+        </UFormGroup>
 
-    <UFormGroup label="Password" name="password">
-      <UInput v-model="state.password" type="password" />
-    </UFormGroup>
+        <UFormGroup label="Password" name="password">
+          <UInput v-model="state.password" type="password" />
+        </UFormGroup>
 
-    <UButton type="submit">Submit</UButton>
-  </UForm>
+        <UButton type="submit">Connexion</UButton>
+      </UForm>
+    </UCard>
+  </div>
 </template>

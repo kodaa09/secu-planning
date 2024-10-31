@@ -66,13 +66,15 @@ async function onDeleteDate(id: number) {
 
   <div>
     <UCard class="mb-14" v-for="date in formatDates" :key="date.id">
-      <h2 class="mb-10 text-xl">
+      <h2 class="mb-10 text-2xl">
         {{ format(date.day, "d MMMM yyy", { locale: fr }) }}
       </h2>
       <div v-for="(time, index) in date.hours">
-        <div class="flex items-center justify-between my-5">
+        <div
+          class="flex-col sm:flex-row flex sm:items-center justify-between my-5"
+        >
           <p>{{ time.firstname }} {{ time.lastname }}</p>
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
             <p>
               {{ time.start.split(":").slice(0, 2).join(":") }} -
               {{ time.end.split(":").slice(0, 2).join(":") }}

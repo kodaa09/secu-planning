@@ -56,7 +56,7 @@ async function onUpdateDate() {
 
 <template>
   <div>
-    <UButton label="Modifier" @click="isOpen = true" />
+    <UButton class="w-full" label="Modifier" @click="isOpen = true" />
 
     <UModal v-model="isOpen" prevent-close>
       <UCard

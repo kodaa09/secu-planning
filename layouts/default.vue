@@ -2,7 +2,7 @@
 
 <template>
   <Header />
-  <div class="container mx-auto">
+  <div class="w-[90%] sm:container mx-auto">
     <slot />
   </div>
 </template>

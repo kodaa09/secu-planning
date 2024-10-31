@@ -9,9 +9,11 @@ const onLogout = async () => {
 
 <template>
   <header class="mb-14">
-    <nav class="container mx-auto flex items-center justify-between py-6">
+    <nav
+      class="hidden container mx-auto md:flex items-center justify-between py-6"
+    >
       <div>
-        <h1>Beth habad securité</h1>
+        <h1 class="text-xl">Beth habad securité</h1>
       </div>
       <ul class="flex items-center gap-8">
         <li>
@@ -28,6 +30,7 @@ const onLogout = async () => {
         </li>
       </ul>
     </nav>
+    <BurgerMenu />
     <UDivider></UDivider>
   </header>
 </template>
